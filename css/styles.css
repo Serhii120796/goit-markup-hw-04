@@ -1,0 +1,409 @@
+:root {
+  /* Color */
+  --primary-text-color-theme-light: #434455;
+  --secondary-text-color-theme-light: #2e2f42;
+  --primary-text-color-theme-dark: #ffffff;
+  --secondary-text-color-theme-dark: #f4f4fd;
+  --logo-color: #4d5ae5;
+  --accent-color: #404bbf;
+  --batton-background-theme-dark: #4d5ae5;
+  --batton-background-accent: #404bbf;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+
+}
+
+ul {
+  padding-left: 0;
+}
+
+img {
+  display: block;
+
+  /* max-width: 100%; - задаємо, коли не вказуємо розмір у розмітці*/
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color-theme-light);
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* ==================================COMPONENTS=============================== */
+
+.secondary-title {
+  margin-bottom: 72px;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color-theme-light);
+}
+
+.photo-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color-theme-light);
+}
+
+.photo-description {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--primary-text-color-theme-light);
+}
+
+.section {
+  padding-bottom: 120px;
+}
+
+.section:nth-child(2n) {
+  padding-top: 120px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* ==================================/COMPONENTS=============================== */
+
+/* ==================================HEADER=============================== */
+
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.page-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+/* Logotype */
+.logotype {
+  margin-right: 76px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--logo-color);
+}
+
+.logo-theme-light {
+  color: var(--secondary-text-color-theme-light);
+}
+
+.logo-theme-dark {
+  color: var(--secondary-text-color-theme-dark);
+}
+
+.menu {
+  display: flex;
+  /* align-items: flex-start; - не знаю, чи потрібно, у нас елементи вирівнюються через падінги батьківського елемента*/
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.menu-link {
+  display: inline-block;
+  font-weight: 500;
+  color: var(--secondary-text-color-theme-light);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
+}
+
+/* Акцент на посилання на активну сторінку */
+.menu .menu-link.link.current {
+  color: var(--accent-color);
+}
+
+/* Contacts */
+
+.address {
+  font-style: normal;
+}
+
+.contacts {
+  display: flex;
+  gap: 40px;
+}
+
+/* Метод Олександра Репети - автоперевірка не пропустила
+.contact-item + .contact-item {
+  margin-left: 40px;
+} */
+
+.contact-link {
+  font-style: normal;
+  font-weight: 400;
+  color: var(--primary-text-color-theme-light);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-color);
+}
+
+/* ==================================/HEADER=============================== */
+
+/* ====================================HERO================================ */
+
+.hero {
+  background-color: var(--secondary-text-color-theme-light);
+  text-align: center;
+  padding: 188px 0;
+}
+
+.hero-title {
+  font-size: 56px;
+  line-height: 1.07;
+  color: var(--primary-text-color-theme-dark);
+  letter-spacing: 0.02em;
+  margin: 0 auto 48px;
+  max-width: 496px;
+}
+
+/* Button */
+.modal-btn {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 169px;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--primary-text-color-theme-dark);
+  background: var(--batton-background-theme-dark);
+  cursor: pointer;
+  text-align: center;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background: var(--batton-background-accent);
+}
+
+/* ====================================/HERO================================ */
+
+/* ================================OUR ADVANTAGES============================ */
+
+.advantage-title {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color-theme-light);
+}
+
+.advantage-text {
+  color: var(--primary-text-color-theme-light);
+}
+
+.advantages .list {
+  display: flex;
+}
+
+.advantages .item {
+  flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+.advantages .item:not(:last-child) {
+  margin-right: 24px;
+}
+
+/* ================================/OUR ADVANTAGES============================ */
+
+/* ===============================WHAT ARE WE DOING=========================== */
+
+.services .list {
+  display: flex;
+}
+
+.services .item:not(:last-child) {
+  margin-right: 24px;
+}
+
+/* ==============================/WHAT ARE WE DOING=========================== */
+
+/* ====================================OUR TEAM=============================== */
+
+.team {
+  background-color: #f4f4fd;
+}
+
+.team-item {
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.team .list {
+  display: flex;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.team .photo-title {
+  margin-bottom: 8px;
+}
+
+.employees-card-content {
+  padding: 32px 16px;
+  text-align: center;
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* ===================================/OUR TEAM=============================== */
+
+/* =====================================FOOTER================================ */
+
+.page-footer {
+  background-color: var(--secondary-text-color-theme-light);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer-text {
+  color: var(--secondary-text-color-theme-dark);
+  width: 264px;
+}
+
+.page-footer .logotype {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+/* =====================================/FOOTER================================ */
+
+/* =====================================FILTER================================ */
+
+.filter {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.filter-btn {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--logo-color);
+  background: var(--secondary-text-color-theme-dark);
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--primary-text-color-theme-dark);
+  background: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: 1px solid transparent;
+}
+
+.filter .card-set {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+  /* margin-left: -24px;
+  margin-top: -48px; */
+}
+
+.filter .card-item {
+  width: calc((100% - 48px) / 3);
+  /* margin-left: 24px;
+  margin-top: 48px; */
+  /* flex-basis: calc(100% / 3 - 24); - задаємо,
+    коли не вказуємо розмір у розмітці */
+}
+
+.filter .card-content {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.filter .photo-title {
+  margin-bottom: 8px;
+}
+
+/* display: flex;
+flex-wrap: wrap;
+gap: 30px; */
+
+/* =====================================FILTER================================ */
