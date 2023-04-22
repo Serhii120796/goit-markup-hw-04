@@ -402,8 +402,11 @@ body {
 
 .page-footer .container {
   display: flex;
-  gap: 120px;
   align-items: baseline;
+}
+
+.block-1 {
+  margin-right: 120px;
 }
 
 .social-media {
